@@ -1,0 +1,27 @@
+@font-face {
+    font-family: "LatoRegular";
+    src: url("../fonts/Lato/Lato-Regular.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "LatoBold";
+    src: url("../fonts/Lato/Lato-Bold.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "LatoSemibold";
+    src: url("../fonts/Lato/Lato-Semibold.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "LatoMedium";
+    src: url("../fonts/Lato/Lato-Medium.ttf");
+    font-style: normal;
+    font-weight: normal;
+}

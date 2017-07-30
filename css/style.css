@@ -1,0 +1,476 @@
+/* line 7, style.scss */
+body {
+  color: white;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* line 12, style.scss */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* line 17, style.scss */
+a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* line 23, style.scss */
+.text-center {
+  text-align: center;
+}
+
+/* line 27, style.scss */
+.btn {
+  color: white;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 15px;
+  border: none;
+  outline: none;
+}
+/* line 34, style.scss */
+.btn:hover {
+  cursor: pointer;
+}
+
+/* line 39, style.scss */
+.btn-loud {
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background-color: #d91e25;
+  padding: 8px 25px;
+  font-size: 14px;
+}
+
+/***** Main page ****/
+/* line 55, style.scss */
+#fp-nav {
+  margin-right: 75px;
+}
+/* line 58, style.scss */
+#fp-nav ul li {
+  width: 20px;
+  height: 20px;
+  margin: 10px 0;
+}
+/* line 64, style.scss */
+#fp-nav ul li a span {
+  width: 12px;
+  height: 12px;
+}
+/* line 69, style.scss */
+#fp-nav ul li a.active span {
+  background: #d91f26;
+  width: 18px;
+  height: 18px;
+  margin: -6px 0 0 -4.5px;
+}
+/* line 78, style.scss */
+#fp-nav ul li:hover a span, #fp-nav ul li:hover a.active span {
+  width: 18px;
+  height: 18px;
+}
+
+/* line 90, style.scss */
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  right: 0;
+  margin-left: 300px;
+  margin-right: 75px;
+  margin-top: 60px;
+}
+/* line 100, style.scss */
+.header .lang-select {
+  position: relative;
+  margin-left: 50px;
+  display: inline-block;
+  padding-left: 30px;
+}
+/* line 105, style.scss */
+.header .lang-select:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -3px;
+  background: url(../img/bg/lang-icon.png) center no-repeat;
+  width: 22px;
+  height: 22px;
+}
+/* line 115, style.scss */
+.header .lang-select select {
+  background: url(../img/bg/lang-icon-caret.png) right 5px no-repeat;
+  color: white;
+  font-size: 14px;
+  font-weight: 900;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 50px;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+/* line 130, style.scss */
+.header .lang-select select option {
+  background: black;
+  border: 1px solid black;
+  background-image: none;
+}
+/* line 138, style.scss */
+.header .login {
+  float: right;
+}
+/* line 142, style.scss */
+.header .login .btn-login {
+  position: relative;
+  background: none;
+  padding-left: 25px;
+}
+/* line 146, style.scss */
+.header .login .btn-login:before {
+  content: '';
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background: url(../img/bg/login-icon.png) center no-repeat;
+  left: 0;
+  top: 0;
+}
+/* line 157, style.scss */
+.header .login .btn-loud {
+  position: relative;
+  top: -3px;
+  margin-left: 45px;
+}
+
+/* line 167, style.scss */
+.aside {
+  max-width: 290px;
+  position: absolute;
+  height: 100%;
+  display: inline-block;
+  z-index: 10;
+  padding: 20px 80px 80px;
+}
+/* line 175, style.scss */
+.aside .nav {
+  position: absolute;
+  top: 45%;
+  transform: translate(0, -50%);
+}
+/* line 179, style.scss */
+.aside .nav li {
+  position: relative;
+  font-size: 14px;
+  line-height: 44px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+/* line 185, style.scss */
+.aside .nav li.active:before {
+  content: '';
+  position: absolute;
+  background: url(../img/bg/active-link.png) center no-repeat;
+  left: -30px;
+  top: 12px;
+  width: 17px;
+  height: 17px;
+}
+
+/* line 200, style.scss */
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 80px 80px;
+}
+/* line 207, style.scss */
+.footer .copyright {
+  font-size: 13px;
+  font-weight: 300;
+  position: absolute;
+  left: 0;
+  color: #545554;
+}
+/* line 215, style.scss */
+.footer .social-icons {
+  float: right;
+  position: absolute;
+  right: 0;
+}
+/* line 219, style.scss */
+.footer .social-icons a {
+  position: relative;
+  display: inline-block;
+  color: #808080;
+  width: 30px;
+  height: 30px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+/* line 228, style.scss */
+.footer .social-icons a:hover {
+  color: white;
+  background: #d91f26;
+}
+/* line 233, style.scss */
+.footer .social-icons a i {
+  position: relative;
+  top: 7px;
+  padding: 0 10px;
+}
+/* line 238, style.scss */
+.footer .social-icons a i.fa-twitter, .footer .social-icons a i.fa-instagram {
+  left: -2px;
+}
+/* line 242, style.scss */
+.footer .social-icons a i.fa-google-plus {
+  left: -5px;
+}
+/* line 249, style.scss */
+.footer .footer-nav {
+  display: inline-block;
+}
+/* line 251, style.scss */
+.footer .footer-nav a {
+  font-size: 13px;
+  font-weight: 600;
+  color: #eb2b33;
+  padding-bottom: 5px;
+  margin: 0 12px;
+}
+/* line 257, style.scss */
+.footer .footer-nav a:hover {
+  border-bottom: 1px solid #8f1a1e;
+}
+
+/* line 265, style.scss */
+.section:before {
+  content: '';
+  background: black;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -99999;
+}
+/* line 275, style.scss */
+.section .btn {
+  font-weight: 700;
+  font-size: 22px;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  border-radius: 25px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background-color: #d91f25;
+  padding: 15px 40px;
+}
+/* line 287, style.scss */
+.section h2 {
+  font-size: 60px;
+  font-weight: 900;
+  margin-bottom: 80px;
+  text-transform: uppercase;
+}
+/* line 293, style.scss */
+.section .container {
+  margin-left: 350px;
+  margin-right: 140px;
+}
+
+/* line 301, style.scss */
+.section-one {
+  font-family: "Kozuka Gothic Pr6N";
+  font-size: 195px;
+  background: url(../img/bg/bg-section-one.png) center no-repeat;
+  background-size: cover;
+}
+
+/* line 313, style.scss */
+.section-two {
+  background: url(../img/bg/bg-section-two.png) center no-repeat;
+}
+/* line 316, style.scss */
+.section-two h2 {
+  margin-left: -210px;
+}
+/* line 320, style.scss */
+.section-two video {
+  max-width: 60%;
+  margin-top: 50px;
+  min-height: 80%;
+  left: 0;
+  margin: auto;
+  min-width: inherit;
+}
+/* line 329, style.scss */
+.section-two .block-adv {
+  position: relative;
+  text-align: left;
+  margin: 20px 0 40px;
+}
+/* line 333, style.scss */
+.section-two .block-adv:before {
+  content: '';
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  background: #d91f26;
+}
+/* line 343, style.scss */
+.section-two .block-adv h3 {
+  font-size: 27px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+/* line 348, style.scss */
+.section-two .block-adv p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #878686;
+  line-height: 30px;
+}
+/* line 354, style.scss */
+.section-two .block-adv.odd {
+  float: left;
+  clear: both;
+  margin: 0 0 20px;
+}
+/* line 358, style.scss */
+.section-two .block-adv.odd:before {
+  right: -35px;
+  top: 35px;
+}
+/* line 363, style.scss */
+.section-two .block-adv.odd.top-adv {
+  margin-left: 140px;
+}
+/* line 365, style.scss */
+.section-two .block-adv.odd.top-adv:before {
+  right: -120px;
+  top: 50px;
+}
+/* line 371, style.scss */
+.section-two .block-adv.odd.bottom-adv {
+  margin-left: 50px;
+}
+/* line 373, style.scss */
+.section-two .block-adv.odd.bottom-adv:before {
+  right: 65px;
+  top: 0;
+}
+/* line 379, style.scss */
+.section-two .block-adv.even {
+  float: right;
+}
+/* line 381, style.scss */
+.section-two .block-adv.even:before {
+  left: -95px;
+  top: 30px;
+}
+/* line 386, style.scss */
+.section-two .block-adv.even.top-adv {
+  margin-right: 140px;
+}
+/* line 388, style.scss */
+.section-two .block-adv.even.top-adv:before {
+  left: -105px;
+  top: 10px;
+}
+/* line 394, style.scss */
+.section-two .block-adv.even.bottom-adv {
+  margin-right: 50px;
+}
+
+/* line 403, style.scss */
+.section-three {
+  background: url(../img/bg/bg-section-three.jpg) center no-repeat;
+  background-size: cover;
+}
+/* line 406, style.scss */
+.section-three .container {
+  width: 45vw;
+}
+/* line 409, style.scss */
+.section-three h2 {
+  display: inline-block;
+  margin-top: 10px;
+}
+/* line 413, style.scss */
+.section-three .video-link {
+  position: relative;
+  display: inline-block;
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  float: right;
+}
+/* line 420, style.scss */
+.section-three .video-link img {
+  margin-right: 15px;
+  margin-bottom: -13px;
+}
+/* line 425, style.scss */
+.section-three .reg-text {
+  font-size: 18px;
+  color: #b7b7b7;
+  font-weight: 500;
+  line-height: 43px;
+  text-align: justify;
+}
+/* line 432, style.scss */
+.section-three .btn-loud {
+  margin-top: 45px;
+}
+
+/* line 439, style.scss */
+.section-four {
+  background: url(../img/bg/bg-section-four.jpg) center no-repeat;
+  background-size: cover;
+}
+/* line 443, style.scss */
+.section-four h3 {
+  font-size: 27px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+/* line 448, style.scss */
+.section-four p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #878686;
+  line-height: 30px;
+}
+
+/* line 457, style.scss */
+video {
+  display: none;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -9999;
+}
