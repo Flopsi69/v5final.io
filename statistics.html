@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title></title>
+	<meta name="keywords" content=""> 
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,900" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://use.fontawesome.com/e95ac7919a.js"></script>
+</head>
+
+<body class='statistics'>
+
+	<!-- ***Header*** -->
+	<header class='header'>
+		<!-- Авторизация -->
+		<div class="login">
+			<button class='btn btn-login'>login</button>
+			<a href='#' class='btn btn-loud'>Start earning now!</a>
+		</div>
+		<!-- Выбор языка -->
+		<div class="lang-select">
+			<input type="text" id='lang-selected' value='ENG' disabled>	
+			<span class="caret-lang">&#9660;</span>
+			<ul class='dropdown-lang text-center'>
+				<li data='ru'><img src="img/lang-icons/en.png" alt="">Ru</li>
+				<li data='jp'><img src="img/lang-icons/js.png" alt="">JP</li>
+				<li data='fr'><img src="img/lang-icons/fr.png" alt="">FR</li>
+			</ul>
+		</div>
+	</header>
+
+
+	<!-- ***Боковое меню*** -->
+	<aside class="aside">
+		<!-- logo -->
+		<div class="logo">
+			<a href="#">
+				<img src="img/logo.png" alt="">
+			</a>
+		</div>
+		<!-- Navbar -->
+		<nav class="navbar">
+			<ul class="nav">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="investments.html">Investments</a></li>
+				<li><a href="career.html">Career</a></li>
+				<li><a href="statistics.html">Statistics</a></li>
+				<li><a href="faq.html">Faq</a></li>
+				<li class='active'><a href="news.html">News</a></li>
+				<li><a href="contacts.html">Contact</a></li>
+			</ul>
+		</nav>
+	</aside>
+
+
+	<!-- ***Основной контент*** -->
+
+	<main class='main'>
+		<div class="container">	
+			<h1>Statistics</h1>
+			<h2>Get a financial report</h2>
+			<div class="graph-container">
+				<div id="placeholder" class="graph-placeholder"></div>
+			</div>
+			<a href='#' class='btn btn-loud'>Get a financial report 2016</a>	
+		</div>
+	</main>
+
+	<!-- ***Footer*** -->
+	<footer class='footer text-center'>
+
+		<!-- Copyright -->
+		<div class="copyright">
+			Copyright &copy; iSeiko.jp
+		</div>
+
+		<!-- Nav-footer -->
+		<nav class="footer-nav">
+			<a href="#">About</a>                       
+			<a href="#">Contact</a>
+			<a href="#">Terms & Conditions</a>
+			<a href="#">Privacy policy</a>
+		</nav>
+
+		<!-- Social icons -->
+		<div class="social-icons">
+			<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+			<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+			<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+			<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+		</div>
+
+	</footer>
+
+	<!-- ***Scripts*** -->
+	<script src='js/vendor/jquery-1.11.2.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/vendors/jquery.easings.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.min.js'></script>
+	<script language="javascript" type="text/javascript" src="js/vendor/jquery.flot.js"></script>
+
+	<script type="text/javascript">
+
+	$(function() {
+
+		var investGraph = [[0,0], [1,10], [1.35, 5], [1.7, 12], [2, 6]];
+
+
+
+		var black = black;
+		var optionsGraph = {
+			legend: {
+				backgroundColor: null
+			},
+			grid: {
+				show: false
+			},
+			series: {
+				lines: {
+					lineWidth: 6
+				}
+			},
+			colors: ['#d91e25']
+		};
+
+		$.plot("#placeholder", [ investGraph ], optionsGraph );
+
+		// $("button").click(function () {
+		// 	doPlot($(this).text());
+		// });
+
+		// Add the Flot version string to the footer
+
+		// $("#footer").prepend("Flot " + $.plot.version + " &ndash; ");
+	});
+
+	</script>
+
+	<!-- *** Custom Scripts*** -->
+	<script src='js/script.js'></script>
+</body>
+</html>

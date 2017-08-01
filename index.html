@@ -21,10 +21,16 @@
 	<header class='header'>
 		<!-- Выбор языка -->
 		<div class="lang-select">
-			<select name="" id="">
+			<!-- <select name="" id="">
 				<option value="">eng</option>
 				<option value="">ru</option>
-			</select>
+			</select> -->
+			<input type="text" id='lang-selected' value='ENG'>
+			<ul class='dropdown-lang text-center'>
+				<li data='ru'>Ru</li>
+				<li data='jp'>JP</li>
+				<li data='fr'>FR</li>
+			</ul>
 		</div>
 		<!-- Авторизация -->
 		<div class="login">
@@ -45,18 +51,17 @@
 		<!-- Navbar -->
 		<nav class="navbar">
 			<ul class="nav">
-				<li class='active'><a href="#">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Investments</a></li>
-				<li><a href="#">Career</a></li>
-				<li><a href="#">Statistics</a></li>
-				<li><a href="#">Faq</a></li>
-				<li><a href="#">News</a></li>
-				<li><a href="#">Contact</a></li>
+				<li class='active'><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="investments.html">Investments</a></li>
+				<li><a href="career.html">Career</a></li>
+				<li><a href="statistics.html">Statistics</a></li>
+				<li><a href="faq.html">Faq</a></li>
+				<li><a href="news.html">News</a></li>
+				<li><a href="contacts.html">Contact</a></li>
 			</ul>
 		</nav>
 	</aside>
-
 
 	<!-- ***Основной контент*** -->
 	<div id="fullpage">
@@ -78,42 +83,42 @@
 			<div class="container">
 				<h2>Advantages of working with us</h2>
 
-				<div class="block-adv odd top-adv">
+				<div class="block-advantage odd top-advantage">
 					<h3>Official company</h3>
 					<p>
 						iSaiko - Is a registered Japanese <br>company.
 					</p>
 				</div>
 
-				<div class="block-adv even top-adv">
+				<div class="block-advantage even top-advantage">
 					<h3>Technology</h3>
 					<p>
 						Technical engineers and analysts of our company developed <br>a unique and more importantly comfortable platform.
 					</p>
 				</div>
 
-				<div class="block-adv odd">
+				<div class="block-advantage odd">
 					<h3>Trust management</h3>
 					<p>
 						Earn in passive mode up to 25% monthly, <br>investing with us, and develop your trader skills
 					</p>
 				</div>
 
-				<div class="block-adv even">
+				<div class="block-advantage even">
 					<h3>Simple and affordable</h3>
 					<p>
 						Invest, starting from $10 with professional traders. To brdo this, <br>you do not need knowledge or experience of the trading.
 					</p>
 				</div>
 
-				<div class="block-adv odd bottom-adv">
+				<div class="block-advantage odd bottom-advantage">
 					<h3>Maximum transparency</h3>
 					<p>
 						The company publishes weekly reports on all transactions <br>for purchase and sale, as well as trade forecasts for the future.
 					</p>
 				</div>
 
-				<div class="block-adv even bottom-adv">
+				<div class="block-advantage even bottom-advantage">
 					<h3>Affiliate program</h3>
 					<p>
 						Develop your own team to generate income without investment. <br>Thanks to a multilevel bonus system. Double affiliate program.
@@ -143,32 +148,34 @@
 		<section class="section section-four">
 			<div class="container">
 				<h2>how <br> we work?</h2>
-				<div class="block-step">
-					<h3>Free registration</h3>
-					<p>
-						To open an account, it's sufficient <br>	to enter your e-mail.
-					</p>
-				</div>
-				<div class="block-step">
-					<h3>Transfer</h3>
-					<p>		
-						Transfer of investment funds <br>in trust to our traders.
-					</p>
-				</div>
-				<div class="block-step">
-					<h3>Trading</h3>
-					<p>				
-						Trading with iSeiko on the <br>cryptocurrency exchanges and weekly <br>reporting of traders.
-					</p>
-				</div>
-				<div class="block-step">
-					<h3>Division</h3>
-					<p>
-						Equal division of final profit between <br>the company and its investors.
-					</p>
+				<ul class='block-steps'>
+					<li class="block-step">
+						<h3>Free registration</h3>
+						<p>
+							To open an account, it's sufficient <br>	to enter your e-mail.
+						</p>
+					</li>
+					<li class="block-step">
+						<h3>Transfer</h3>
+						<p>		
+							Transfer of investment funds <br>in trust to our traders.
+						</p>
+					</li>
+					<li class="block-step">
+						<h3>Trading</h3>
+						<p>				
+							Trading with iSeiko on the <br>cryptocurrency exchanges and weekly <br>reporting of traders.
+						</p>
+					</li>
+					<li class="block-step">
+						<h3>Division</h3>
+						<p>
+							Equal division of final profit between <br>the company and its investors.
+						</p>
+					</li>
 				</div>
 				<button class='btn btn-loud'>So Let’s start earning</button>
-			</div>
+			</ul>
 		</section>
 	</div>
 
@@ -201,9 +208,12 @@
 
 	</footer>
 
+	<!-- ***Scripts*** -->
 	<script src='js/vendor/jquery-1.11.2.min.js'></script>
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/vendors/jquery.easings.min.js'></script>
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.min.js'></script>
+
+	<!-- *** Custom Scripts*** -->
 	<script src='js/script.js'></script>
 </body>
 </html>
