@@ -46,11 +46,11 @@
 		</div>
 		<nav class="navbar navbar-mob">
 			<ul class="nav">
-				<li class='active'><a href="index.html">Home</a></li>
+				<li><a href="index.html">Home</a></li>
 				<li><a href="about.html">About</a></li>
 				<li><a href="investments.html">Investments</a></li>
 				<li><a href="career.html">Career</a></li>
-				<li><a href="statistics.html">Statistics</a></li>
+				<li class='active'><a href="statistics.html">Statistics</a></li>
 				<li><a href="faq.html">Faq</a></li>
 				<li><a href="news.html">News</a></li>
 				<li><a href="contacts.html">Contact</a></li>
@@ -88,7 +88,7 @@
 		<div class="container">	
 			<h1>Statistics</h1>
 			<h2>Get a financial report</h2>
-			<img class='stat-graph' src="img/stat-graph.png" alt="">
+			<!-- <img class='stat-graph' src="img/stat-graph.png" alt=""> -->
 			<div class="graph-container">
 				<div id="placeholder" class="graph-placeholder"></div>
 			</div>
@@ -131,9 +131,102 @@
 
 	<script type="text/javascript">
 
+
+
+
 	$(function() {
 
-		var investGraph = [[0,0], [1,10], [1.35, 5], [1.7, 12], [2, 6]];
+		// We use an inline data source in the example, usually data would
+		// be fetched from a server
+
+		var data = [],
+			totalPoints = 300;
+
+		function getRandomData() {
+
+			if (data.length > 0)
+				data = data.slice(1);
+
+			// Do a random walk
+
+			while (data.length < totalPoints) {
+
+				var prev = data.length > 0 ? data[data.length - 1] : 50,
+					y = prev + Math.random() * 10 - 5;
+
+				if (y < 0) {
+					y = 0;
+				} else if (y > 100) {
+					y = 100;
+				}
+
+				data.push(y);
+			}
+
+			// Zip the generated y values with the x values
+
+			var res = [];
+			for (var i = 0; i < data.length; ++i) {
+				res.push([i, data[i]])
+			}
+
+			return res;
+		}
+
+		// Set up the control widget
+
+		var updateInterval = 30;
+		$("#updateInterval").val(updateInterval).change(function () {
+			var v = $(this).val();
+			if (v && !isNaN(+v)) {
+				updateInterval = +v;
+				if (updateInterval < 1) {
+					updateInterval = 1;
+				} else if (updateInterval > 2000) {
+					updateInterval = 2000;
+				}
+				$(this).val("" + updateInterval);
+			}
+		});
+
+		var plot = $.plot("#placeholder", [ getRandomData() ], {
+			series: {
+				shadowSize: 0,	// Drawing is faster without shadows
+				lines: {
+					lineWidth: 3
+				}
+			},
+
+			yaxis: {
+				min: 0,
+				max: 100
+			},
+			xaxis: {
+				show: false
+			},
+			colors: ['#d91e26']
+		});
+
+		function update() {
+
+			plot.setData([getRandomData()]);
+
+			// Since the axes don't change, we don't need to call plot.setupGrid()
+
+			plot.draw();
+			setTimeout(update, updateInterval);
+		}
+
+		update();
+});
+	
+
+	/*$(function() {
+
+		var investGraph = [[0,0], [1,10], [1.35, 5], [1.7, 12], [2, 6], [3.5, 24], [7,36], [7.5, 33], [9.5, 48],
+		[10,44], [11,48], [13.35, 59], [13.7, 33], [15, 54], [15.5, 56], [17,60],
+		[18,44], [19,48], [21.35, 59], [21.7, 33], [22, 37], [23.5, 29], [24,33],
+		[25,40], [26,48], [28.35, 34], [31.7, 40], [32, 49], [33.5, 43], [38,20],];
 
 
 
@@ -147,16 +240,16 @@
 			},
 			series: {
 				lines: {
-					lineWidth: 6
+					lineWidth: 9
 				}
 			},
-			colors: ['#d91e25']
+			colors: ['#d91e26']
 		};
 
 		$.plot("#placeholder", [ investGraph ], optionsGraph );
 
 	});
-
+*/
 	</script>
 
 	<!-- *** Custom Scripts*** -->

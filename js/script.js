@@ -6,8 +6,25 @@ $(document).ready(function() {
 		navigation: true,
 		navigationPosition: 'right', 
 		// scrollOverflow: true,
-		responsiveWidth: 1500
+		responsiveWidth: 1500,
+		verticalCentered: false
 	});
+
+
+	// for ANim
+	if ( $(window).width() < 1500 ) {
+		$('.index h2, .index .video-link, .index .btn-loud').addClass('hidden')
+	}
+
+	if ( $(window).width() < 1000 || $(window).height() < 950) {
+		console.log(3);
+		$('.investments .section-four .block-steps .block-step').removeClass('delay-one delay-two delay-three delay-four');
+		$('.delay-one').removeClass('delay-one');
+		$('.delay-two').removeClass('delay-two');
+		$('.delay-three').removeClass('delay-three');
+		$('.delay-four').removeClass('delay-four');
+		$('.delay-five').removeClass('delay-five');
+	}
 
 	// Mobile nav 
 	$('.burger').click(function(){
@@ -151,6 +168,16 @@ $(document).ready(function() {
 	}, function(){
 		$(this).toggleClass('pulse block-advantage-hover');
 	})
+
+	$('.block-step ').hover(function(){
+		$(this).removeClass('fadeIn delay-one delay-two delay-three delay-four');
+		$(this).addClass('visible');
+		$(this).toggleClass('pulse');
+	}, function(){
+		$(this).toggleClass('pulse');
+	})
+
+	
 
 	$(window).scroll(function(){
 		console.log(5);
