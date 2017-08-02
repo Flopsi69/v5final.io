@@ -241,6 +241,84 @@ a {
 	}
 }
 
+// Burger
+
+.burger-block {
+	display: none;
+	position: fixed;
+	left: 0;
+	right: 0;
+	z-index: 100;
+	.burger {
+		position: relative;
+		z-index: 10;
+		cursor: pointer;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		border-radius: 5px;
+		border: 2px solid white;
+		display: inline-block;
+		padding: 5px 10px;
+		-webkit-transition: all .7s;
+		-moz-transition: all .7s;
+		-o-transition: all .7s;
+		transition: all .7s;
+		&.burger-open {
+			background: $red;
+			span {
+			}
+		}
+		span {
+			-webkit-transition: all .7s;
+		-moz-transition: all .7s;
+		-o-transition: all .7s;
+		transition: all .7s;
+			display: block;
+			height: 2px;
+			width: 20px;
+			background: white;
+			margin: 5px 0;
+		}
+	}
+	.navbar-mob {
+		position: fixed;
+			top: 0;
+			right: 0;
+			left: 0;
+			margin: 0;
+			background: rgba(0, 0, 0, .9);
+			text-align: center;
+			font-size: 24px;
+			font-weight: 700;
+			height: 100vh;
+			overflow: scroll;
+		.nav {
+			
+			li {
+				&.active a:before {
+					content: '';
+					position: absolute;
+					background: url(../img/bg/active-link.png) center no-repeat;
+					left: -30px;
+					top: 20px;
+					width: 17px;
+					height: 17px;
+				}
+				a {
+					position: relative;
+					display: inline-block;
+					padding: 15px 0;
+				}
+				&:hover {
+					a {
+						color: $red;
+					}
+				}
+			}
+		}
+	}
+}
+
 // Header
 
 .header {
@@ -1958,6 +2036,9 @@ a {
 	.news .main .news-list {
 		text-align: center;
 	}
+	.burger-block {
+		display: inline-block;
+	}
 	.career .career-list .career-block .block-sect.icon {
 		padding-bottom: 15px;
 	}
@@ -2078,6 +2159,15 @@ a {
 		margin-left: 35px;
 		margin-right: 35px;
 	}
+	.section-two .block-advantage p {
+		padding-right: 90px;
+		br {
+			display: none;
+		}
+	}
+	.header {
+		overflow: hidden;
+	}
 	.section-two .block-advantage:before {
 		display: none;
 	}
@@ -2086,8 +2176,10 @@ a {
 	}
 	.section-two .block-advantage h3 {
 		position: relative;
+    font-size: 20px;
+    margin-bottom: 0;
+    display: inline-block;
 
-		display: inline-block;
 	}
 	.section-two .block-advantage h3:before {
     -webkit-transition: all 0.7s;
@@ -2096,7 +2188,7 @@ a {
     transition: all 0.7s;
     content: '';
     right: -30px;
-		top: 10px;
+		top: 5px;
     position: absolute;
     width: 18px;
     height: 18px;
@@ -2249,6 +2341,13 @@ a {
 	.faq .main .faq-list .faq-item i {
 		padding: 0 10px;
 	}
+}
+
+@media screen and (max-height: 700px) {
+	.section-one img {
+    bottom: 20px;
+    width: 25px;
+  }
 }
 
 // 

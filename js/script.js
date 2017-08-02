@@ -9,6 +9,12 @@ $(document).ready(function() {
 		responsiveWidth: 1500
 	});
 
+	// Mobile nav 
+	$('.burger').click(function(){
+		$('.navbar-mob').slideToggle();
+		$(this).toggleClass('burger-open');
+	})
+
 	// Dropdown lang
 	$('.lang-select').click(function(e){
 		e.preventDefault();
