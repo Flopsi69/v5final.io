@@ -61,113 +61,17 @@
 		</nav>
 	</aside>
 
-
-	<!-- ***Боковое меню*** -->
-	<aside class="aside">
-		<!-- logo -->
-		<div class="logo">
-			<a href="#">
-				<img src="img/logo.png" alt="">
-			</a>
-		</div>
-		<!-- Navbar -->
-		<nav class="navbar">
-			<ul class="nav">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="investments.html">Investments</a></li>
-				<li><a href="career.html">Career</a></li>
-				<li><a href="statistics.html">Statistics</a></li>
-				<li><a href="faq.html">Faq</a></li>
-				<li><a href="news.html">News</a></li>
-				<li class='active'><a href="contacts.html">Contact</a></li>
-			</ul>
-		</nav>
-	</aside>
-
-<style>
-      /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
-      #map {
-        height: 100%;
-      }
-      /* Optional: Makes the sample page fill the window. */
-      html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-    </style>
-
 	<!-- ***Основной контент*** -->
 	<main class='main'>
 		<div id="map"></div>
-
-		<script>
-			function initMap() {
-        // Styles a map in night mode.
-        var map = new google.maps.Map(document.getElementById('map'), {
-        	center: {lat: 40.674, lng: -73.945},
-        	zoom: 12,
-        	styles: [
-        	{
-        		"stylers": [
-        		{
-        			"hue": "#ff1a00"
-        		},
-        		{
-        			"invert_lightness": true
-        		},
-        		{
-        			"saturation": -100
-        		},
-        		{
-        			"lightness": 33
-        		},
-        		{
-        			"gamma": 0.5
-        		}
-        		]
-        	},
-        	{
-        		"featureType": "water",
-        		"elementType": "geometry",
-        		"stylers": [
-        		{
-        			"color": "#2D333C"
-        		}
-        		]
-        	}
-        	]
-        });
-      }
-    </script>
-     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZfi-9_dLHT7eiGFc-uQEpffv1ME1K_Zo&callback=initMap"
-    async defer></script>
-
-	
-	<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1619.9813112999273!2d139.7380986582808!3d35.70253739504736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c5a790beb6f%3A0x545f8c17c10ed735!2zNSBDaG9tZS0yMC01IEthZ3VyYXpha2EsIFNoaW5qdWt1LWt1LCBUxY1recWNLXRvIDE2Mi0wODI1LCDQr9C_0L7QvdC40Y8!5e0!3m2!1sru!2sua!4v1501414964531" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> -->
-		<div class="container">
+		<div class="container clearfix">
+			<h1>Contact</h1>
 			<!-- Left side -->
-			<div class="left-side side">
-				<h1>Contact</h1>
-				<div class="form-contact form-block">
-					<h2>Let’s get in touch</h2>
-					<!-- form -->
-					<form class='delay-two lightSpeedIn hidden' action="">
-						<input type="text" placeholder="Name"><br>
-						<input type='email' placeholder="E-mail"><br>
-						<textarea name="" id=""  rows="5" placeholder="Messege"></textarea><br>
-						<button href='#' class='btn btn-loud delay-three' type='submit'>submit now</button>
-					</form>
-				</div>
-			</div><!--
-			 right side 
-			--><div class="right-side side hidden contact-data delay-four fadeIn">
+			<div class="right-side side hidden contact-data delay-four fadeIn">
 				<div class="contact-block">
-					<i class="fa fa-map-marker" aria-hidden="true"></i>
 					<p>
-						Japan, 〒162-0825 Tōkyō-to, Shinjuku-ku, Kagurazaka, <br>5 Chome−２０−５- 1 - 3 Block 423 
+						<i class="fa fa-map-marker" aria-hidden="true"></i>F
+						Japan, 〒162-0825 Tōkyō-to, Shinjuku-ku, Kagurazaka, 5 Chome−２０−５- 1 - 3 Block 423 
 					</p>
 				</div>
 				<div class="contact-block">
@@ -182,7 +86,21 @@
 						<a href="mailto: support@iseiko.jp">support@iseiko.jp</a>
 					</p>
 				</div>
-			</div>		
+			</div><!--
+			 right side 
+			-->	<div class="left-side side">
+				
+				<div class="form-contact form-block">
+					<h2>Let’s get in touch</h2>
+					<!-- form -->
+					<form class='delay-two lightSpeedIn hidden' action="">
+						<input type="text" placeholder="Name"><br>
+						<input type='email' placeholder="E-mail"><br>
+						<textarea name="" id=""  rows="5" placeholder="Messege"></textarea><br>
+						<button href='#' class='btn btn-loud delay-three' type='submit'>submit now</button>
+					</form>
+				</div>
+			</div>	
 		</div>
 	</main>
 
@@ -220,6 +138,80 @@
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.min.js'></script>
 
 	<!-- *** Custom Scripts*** -->
+	<script>
+			function initMap() {
+        // Styles a map in night mode.
+        var markerPos = {lat: 35.7025374, lng: 139.739193};
+        var vertPos = 35.7026874;
+        var horPos = 139.738193;
+        if ( $(window).width() < 960 ) {
+        	var vertPos =35.7022074;
+        	var horPos = 139.738993;
+        } else if ( $(window).width() < 1300 ) {
+        	var vertPos = 35.7029874;
+        }
+        var mapCenter = {lat: vertPos, lng: horPos };
+        var map = new google.maps.Map(document.getElementById('map'), {
+        	center: mapCenter,
+        	zoom: 19,
+        	disableDefaultUI: true,
+        	styles: [
+        	{
+        		"stylers": [
+        		{
+        			"hue": "#ff1a00"
+        		},
+        		{
+        			"invert_lightness": true
+        		},
+        		{
+        			"saturation": -100
+        		},
+        		{
+        			"lightness": 33
+        		},
+        		{
+        			"gamma": 0.5
+        		}
+        		]
+        	},
+        	{
+        		"featureType": "water",
+        		"elementType": "geometry",
+        		"stylers": [
+        		{
+        			"color": "#2D333C"
+        		}
+        		]
+        	}
+        	]
+        });
+
+        // var marker = new google.maps.Marker({
+        // 	position: markerPos,
+        // 	map: map
+        // });
+
+        var companyImage = new google.maps.MarkerImage('img/marker.png',
+        	new google.maps.Size(46,47),
+        	new google.maps.Point(0,0),
+        	new google.maps.Point(23,55)
+        	);
+
+
+        var companyPos = new google.maps.LatLng(49.98601, 36.27931);
+
+        var companyMarker = new google.maps.Marker({
+        	position: markerPos,
+        	map: map,
+        	icon: companyImage,
+        	title:"Как нас найти?",
+        	zIndex: 1
+        });
+      }
+    </script>
+     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZfi-9_dLHT7eiGFc-uQEpffv1ME1K_Zo&callback=initMap"
+    async defer></script>
 	<script src='js/script.js'></script>
 </body>
 </html>

@@ -38,7 +38,6 @@
 		</div>
 	</header>
 
-
 	<!-- ***Боковое меню*** -->
 	<aside class="aside">
 		<!-- logo -->
@@ -54,9 +53,9 @@
 				<li><a href="about.html">About</a></li>
 				<li><a href="investments.html">Investments</a></li>
 				<li><a href="career.html">Career</a></li>
-				<li><a href="statistics.html">Statistics</a></li>
+				<li class='active'><a href="statistics.html">Statistics</a></li>
 				<li><a href="faq.html">Faq</a></li>
-				<li class='active'><a href="news.html">News</a></li>
+				<li><a href="news.html">News</a></li>
 				<li><a href="contacts.html">Contact</a></li>
 			</ul>
 		</nav>
@@ -69,6 +68,7 @@
 		<div class="container">	
 			<h1>Statistics</h1>
 			<h2>Get a financial report</h2>
+			<img class='stat-graph' src="img/stat-graph.png" alt="">
 			<div class="graph-container">
 				<div id="placeholder" class="graph-placeholder"></div>
 			</div>
@@ -104,6 +104,7 @@
 
 	<!-- ***Scripts*** -->
 	<script src='js/vendor/jquery-1.11.2.min.js'></script>
+	<script src='js/vendor/jquery.viewportchecker.min.js'></script>
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/vendors/jquery.easings.min.js'></script>
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.min.js'></script>
 	<script language="javascript" type="text/javascript" src="js/vendor/jquery.flot.js"></script>
@@ -134,13 +135,6 @@
 
 		$.plot("#placeholder", [ investGraph ], optionsGraph );
 
-		// $("button").click(function () {
-		// 	doPlot($(this).text());
-		// });
-
-		// Add the Flot version string to the footer
-
-		// $("#footer").prepend("Flot " + $.plot.version + " &ndash; ");
 	});
 
 	</script>

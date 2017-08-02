@@ -4,7 +4,9 @@ $(document).ready(function() {
 	$('#fullpage').fullpage({
 		anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage'],
 		navigation: true,
-		navigationPosition: 'right'
+		navigationPosition: 'right', 
+		// scrollOverflow: true,
+		responsiveWidth: 1500
 	});
 
 	// Dropdown lang
@@ -38,15 +40,21 @@ $(document).ready(function() {
 		offset: 100
 	});
 
-	$('.main h2').viewportChecker({
+	$('h2').viewportChecker({
 		classToAdd: 'visible animated rotateInDownLeft duration-one',
 		offset: 100
 	});
 
-	$('.contacts form, .contacts .contact-data, .career .career-descr h4, .video-link, .video-link img').viewportChecker({
+	$('.contacts form, .contacts .contact-data, .video-link img').viewportChecker({
 		classToAdd: 'visible animated',
 		offset: 100
 	});
+
+	$('.video-link').viewportChecker({
+		classToAdd: 'visible animated jackInTheBox delay-one',
+		offset: 100
+	});
+
 
 
 	// news 
@@ -85,9 +93,9 @@ $(document).ready(function() {
 	});
 
 	$('.case-item').hover(function(){
-		$(this).children('p').addClass('animated tada');
+		$(this).children('p').addClass('animated pulse');
 	}, function(){
-		$(this).children('p').removeClass('animated tada');
+		$(this).children('p').removeClass('animated pulse');
 	})
 
 	// faq
@@ -112,6 +120,11 @@ $(document).ready(function() {
 		offset: 100
 	});
 
+	$('.career .career-descr h4').viewportChecker({
+		classToAdd: 'visible animated jackInTheBox',
+		offset: 100
+	});
+
 
 	// about
 	$('.about-item').hover(function(){
@@ -120,10 +133,24 @@ $(document).ready(function() {
 		$(this).children('p').children('img').removeClass('animated tada');
 	})
 
-	$('.video-link img').hover(function(){
-		$(this).toggleClass('rubberBand delay-three');
+	$('.video-link a').hover(function(){
+		$(this).children('img').addClass('rubberBand');
 	}, function(){
-		$(this).toggleClass('rubberBand');
+		$(this).children('img').removeClass('rubberBand');
+	})
+
+	// main
+	$('.section-two .block-advantage').hover(function(){
+		$(this).toggleClass('pulse block-advantage-hover');
+	}, function(){
+		$(this).toggleClass('pulse block-advantage-hover');
+	})
+
+	$(window).scroll(function(){
+		console.log(5);
+		if ( $('section-four').hasClass('active') ){
+			console.log('yes');
+		}
 	})
 
 });

@@ -10,35 +10,33 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,900" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.css">
+	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/style.css">
 	<script src="https://use.fontawesome.com/e95ac7919a.js"></script>
 </head>
 
-<body>
+<body class='index'>
 
 	<!-- ***Header*** -->
 	<header class='header'>
-		<!-- Выбор языка -->
-		<div class="lang-select">
-			<!-- <select name="" id="">
-				<option value="">eng</option>
-				<option value="">ru</option>
-			</select> -->
-			<input type="text" id='lang-selected' value='ENG'>
-			<ul class='dropdown-lang text-center'>
-				<li data='ru'>Ru</li>
-				<li data='jp'>JP</li>
-				<li data='fr'>FR</li>
-			</ul>
-		</div>
 		<!-- Авторизация -->
 		<div class="login">
 			<button class='btn btn-login'>login</button>
-			<button class='btn btn-loud'>Start earning now!</button>
+			<a href='#' class='btn btn-loud'>Start earning now!</a>
+		</div>
+		<!-- Выбор языка -->
+		<div class="lang-select">
+			<input type="text" id='lang-selected' value='ENG' disabled>	
+			<span class="caret-lang">&#9660;</span>
+			<ul class='dropdown-lang text-center'>
+				<li data='ru'><img src="img/lang-icons/en.png" alt="">Ru</li>
+				<li data='jp'><img src="img/lang-icons/js.png" alt="">JP</li>
+				<li data='fr'><img src="img/lang-icons/fr.png" alt="">FR</li>
+			</ul>
 		</div>
 	</header>
-
 
 	<!-- ***Боковое меню*** -->
 	<aside class="aside">
@@ -67,58 +65,61 @@
 	<div id="fullpage">
 		<!-- section-1 -->
 		<section class="section section-one text-center">
-			<video autoplay loop data-keepplaying>
+			<video autoplay loop data-keepplaying poster="img/bg/bg-sec1.png">
 				<source data-src="video/iseiko_720.mp4" type="video/mp4" />
 				<source data-src="video/iseiko_720.webm" type="video/webm" />
 			</video>
+			<!-- <div class="container"> -->
 			成功
+			<img  class='infinite animated bounce' src="img/ico_scroll.png" alt="">
+			<!-- </div> -->
 		</section>
 
 		<!-- section-2 -->
 		<section class="section section-two text-center">
-			<video autoplay loop data-keepplaying muted>
+			<video autoplay loop data-keepplaying muted poster="img/bg/bg-sec2.png">
 				<source data-src="video/main-layer2.mp4" type="video/mp4" />
 				<source data-src="video/main-layer2.webm" type="video/webm" />
 			</video>
-			<div class="container">
+			<div class="container clearfix">
 				<h2>Advantages of working with us</h2>
 
-				<div class="block-advantage odd top-advantage">
+				<div class="block-advantage animated pulse infinite odd top-advantage">
 					<h3>Official company</h3>
 					<p>
 						iSaiko - Is a registered Japanese <br>company.
 					</p>
 				</div>
 
-				<div class="block-advantage even top-advantage">
+				<div class="block-advantage animated pulse infinite even top-advantage">
 					<h3>Technology</h3>
 					<p>
 						Technical engineers and analysts of our company developed <br>a unique and more importantly comfortable platform.
 					</p>
 				</div>
 
-				<div class="block-advantage odd">
+				<div class="block-advantage animated pulse infinite odd">
 					<h3>Trust management</h3>
 					<p>
 						Earn in passive mode up to 25% monthly, <br>investing with us, and develop your trader skills
 					</p>
 				</div>
 
-				<div class="block-advantage even">
+				<div class="block-advantage animated pulse infinite even">
 					<h3>Simple and affordable</h3>
 					<p>
 						Invest, starting from $10 with professional traders. To brdo this, <br>you do not need knowledge or experience of the trading.
 					</p>
 				</div>
 
-				<div class="block-advantage odd bottom-advantage">
+				<div class="block-advantage animated pulse infinite odd bottom-advantage">
 					<h3>Maximum transparency</h3>
 					<p>
 						The company publishes weekly reports on all transactions <br>for purchase and sale, as well as trade forecasts for the future.
 					</p>
 				</div>
 
-				<div class="block-advantage even bottom-advantage">
+				<div class="block-advantage animated pulse infinite even bottom-advantage">
 					<h3>Affiliate program</h3>
 					<p>
 						Develop your own team to generate income without investment. <br>Thanks to a multilevel bonus system. Double affiliate program.
@@ -140,47 +141,45 @@
 				<p class='reg-text'>
 					February 15, 2015 Yoshimi Kagava has already been a successful trader in all known exchanges working not just with BitCoin but also with the daily showing and gaining popularity at that time of the AltCoin rank. And for insider information, he was one of the consultants during the creation of the second-generation crypto currency Ethereum.
 				</p>
-				<button class='btn btn-loud'>read more</button>
+				<button class='btn visible btn-loud'>read more</button>
 			</div>
 		</section>
 
 		<!-- section-4 -->
 		<section class="section section-four">
-			<div class="container">
+			<div class="container clearfix">
 				<h2>how <br> we work?</h2>
-				<ul class='block-steps'>
-					<li class="block-step">
+				<ul class='block-steps clearfix'>
+					<li class="block-step animated fadeIn delay-one">
 						<h3>Free registration</h3>
 						<p>
 							To open an account, it's sufficient <br>	to enter your e-mail.
 						</p>
 					</li>
-					<li class="block-step">
+					<li class="block-step animated fadeIn delay-two">
 						<h3>Transfer</h3>
 						<p>		
 							Transfer of investment funds <br>in trust to our traders.
 						</p>
 					</li>
-					<li class="block-step">
+					<li class="block-step animated fadeIn delay-three">
 						<h3>Trading</h3>
 						<p>				
 							Trading with iSeiko on the <br>cryptocurrency exchanges and weekly <br>reporting of traders.
 						</p>
 					</li>
-					<li class="block-step">
+					<li class="block-step animated fadeIn delay-four">
 						<h3>Division</h3>
 						<p>
 							Equal division of final profit between <br>the company and its investors.
 						</p>
 					</li>
-				</div>
-				<button class='btn btn-loud'>So Let’s start earning</button>
-			</ul>
+				</ul>
+				<button class='btn visible btn-loud'>So Let’s start earning</button>
+			</div>
 		</section>
+
 	</div>
-
-
-
 
 	<!-- ***Footer*** -->
 	<footer class='footer text-center'>
@@ -210,7 +209,9 @@
 
 	<!-- ***Scripts*** -->
 	<script src='js/vendor/jquery-1.11.2.min.js'></script>
+	<script src='js/vendor/jquery.viewportchecker.min.js'></script>
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/vendors/jquery.easings.min.js'></script>
+	<script type="text/javascript" src="js/vendor/scrolloverflow.min.js"></script>
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.min.js'></script>
 
 	<!-- *** Custom Scripts*** -->
