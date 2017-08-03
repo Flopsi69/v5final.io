@@ -1176,9 +1176,9 @@ a {
 
 /*** Faq ***/
 .faq {
-	// background: url(../img/bg/bg-faq.jpg) top no-repeat;
-	// background-attachment: fixed;
-	// background-size: cover;
+	background: url(../img/bg/bg-faq.jpg) top no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
 	min-height: 100vh;
 		&:before {
 			min-height: 100vh;
