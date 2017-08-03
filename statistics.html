@@ -141,6 +141,9 @@
 
 		var data = [],
 			totalPoints = 300;
+			if ( $(window).width() < 1000) {
+				var totalPoints = 100;
+			}
 
 		function getRandomData() {
 
@@ -175,7 +178,7 @@
 
 		// Set up the control widget
 
-		var updateInterval = 30;
+		var updateInterval = 300;
 		$("#updateInterval").val(updateInterval).change(function () {
 			var v = $(this).val();
 			if (v && !isNaN(+v)) {
@@ -200,6 +203,15 @@
 			yaxis: {
 				min: 0,
 				max: 100
+			},
+			grid: {
+
+				borderColor: 'none',
+				minBorderMargin: 20
+				// clickable: boolean
+				// hoverable: boolean
+				// autoHighlight: boolean
+				// mouseActiveRadius: number
 			},
 			xaxis: {
 				show: false
