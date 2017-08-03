@@ -2786,370 +2786,369 @@ a {
 
   /* line 2398, style.scss */
   .faq video {
-    left: 0;
     background-size: cover;
   }
 
-  /* line 2402, style.scss */
+  /* line 2401, style.scss */
   .news .main .news-list .news-item .news-date {
     font-size: 14px;
     top: 0;
   }
 
-  /* line 2406, style.scss */
+  /* line 2405, style.scss */
   .news .main .news-list .news-item {
     margin-bottom: 20px;
   }
 
-  /* line 2409, style.scss */
+  /* line 2408, style.scss */
   .about .main .section-about-two {
     background: url(../img/bg/bg-about-two.jpg) 70% top no-repeat black;
   }
 
-  /* line 2412, style.scss */
+  /* line 2411, style.scss */
   .section-four .block-steps .block-step {
     float: inherit !important;
   }
 
-  /* line 2415, style.scss */
+  /* line 2414, style.scss */
   .about .main .section-about-two .container .sep-sect .btn {
     font-size: 16px;
   }
 
-  /* line 2418, style.scss */
+  /* line 2417, style.scss */
   .header .login .btn-loud {
     font-size: 12px;
   }
 
-  /* line 2421, style.scss */
+  /* line 2420, style.scss */
   .statistics .main .btn-loud {
     font-size: 12px;
   }
 
-  /* line 2424, style.scss */
+  /* line 2423, style.scss */
   .video-link {
     font-size: 14px;
   }
 
-  /* line 2427, style.scss */
+  /* line 2426, style.scss */
   .section-four .block-steps .block-step {
     width: 100%;
     height: auto;
   }
 
-  /* line 2431, style.scss */
+  /* line 2430, style.scss */
   .main .container h2, .index .container h2 {
     font-size: 22px;
   }
 
-  /* line 2434, style.scss */
+  /* line 2433, style.scss */
   .investments .section-invest {
     padding: 45px 0 20px;
   }
 
-  /* line 2437, style.scss */
+  /* line 2436, style.scss */
   .investments .section-more p {
     font-size: 18px;
     line-height: 30px;
     font-weight: 700;
   }
 
-  /* line 2442, style.scss */
+  /* line 2441, style.scss */
   .investments .section-cases .case-list .case-item {
     padding: 15px 0;
   }
 
-  /* line 2445, style.scss */
+  /* line 2444, style.scss */
   .investments .section-four {
     padding-bottom: 50px;
     padding-top: 0;
   }
 
-  /* line 2449, style.scss */
+  /* line 2448, style.scss */
   .index .header {
     margin: 40px 10px 0 0;
   }
 }
 @media screen and (max-width: 380px) {
-  /* line 2456, style.scss */
+  /* line 2455, style.scss */
   .footer .footer-nav a {
     display: block;
     padding: 5px 0;
     margin: 10px 5px;
   }
 
-  /* line 2462, style.scss */
+  /* line 2461, style.scss */
   .news .main .news-list .news-item .news-date {
     font-size: 12px;
   }
 
-  /* line 2465, style.scss */
+  /* line 2464, style.scss */
   .index .aside {
     padding: 20px 20px 0 30px;
   }
 
-  /* line 2468, style.scss */
+  /* line 2467, style.scss */
   .index .header {
     margin: 20px 10px 0 0;
   }
 
-  /* line 2471, style.scss */
+  /* line 2470, style.scss */
   .header {
     width: 50%;
     left: initial;
     margin-top: 45px;
   }
-  /* line 2475, style.scss */
+  /* line 2474, style.scss */
   .header .login {
     padding: 0 10px 20px 40px;
   }
 
-  /* line 2479, style.scss */
+  /* line 2478, style.scss */
   .career .career-list .career-block .block-sect.turnover .mid-title {
     font-size: 13px;
   }
 
-  /* line 2482, style.scss */
+  /* line 2481, style.scss */
   .career .career-list .career-block .block-sect.lvl.lvl-9 .wrap-bg {
     margin-top: 10px;
   }
 
-  /* line 2485, style.scss */
+  /* line 2484, style.scss */
   .faq .main .faq-list .faq-item {
     font-size: 14px;
     padding-left: 0;
   }
 
-  /* line 2489, style.scss */
+  /* line 2488, style.scss */
   input, textarea {
     font-size: 16px;
   }
 
-  /* line 2492, style.scss */
+  /* line 2491, style.scss */
   .faq .main .faq-list .faq-item i {
     padding: 0 10px;
   }
 
-  /* line 2495, style.scss */
+  /* line 2494, style.scss */
   .header {
     margin: 20px 10px 0 0;
   }
 
-  /* line 2498, style.scss */
+  /* line 2497, style.scss */
   .header .login .btn-loud {
     margin: 10px 0;
     padding: 5px;
     text-align: center;
   }
 
-  /* line 2503, style.scss */
+  /* line 2502, style.scss */
   .header .lang-select {
     position: absolute;
     right: 0;
     top: 73px;
   }
 
-  /* line 2508, style.scss */
+  /* line 2507, style.scss */
   .header .login {
     padding-left: 0 !important;
   }
 }
 @media (min-width: 1500px) and (max-height: 1000px) {
-  /* line 2514, style.scss */
+  /* line 2513, style.scss */
   .section-two h2 {
     margin: 10px 0 40px !important;
   }
 
-  /* line 2517, style.scss */
+  /* line 2516, style.scss */
   .section-two .block-advantage p {
     margin-bottom: 0;
   }
 
-  /* line 2520, style.scss */
+  /* line 2519, style.scss */
   .section-two .block-advantage h3 {
     margin-top: 0;
   }
 
-  /* line 2523, style.scss */
+  /* line 2522, style.scss */
   .section-two video {
     bottom: initial;
-    top: 125px;
+    top: 135px;
   }
 
-  /* line 2527, style.scss */
+  /* line 2526, style.scss */
   .section-three .reg-text {
     line-height: 33px;
   }
 
-  /* line 2530, style.scss */
+  /* line 2529, style.scss */
   .section-three .btn-loud {
     margin-top: 15px;
   }
 
-  /* line 2533, style.scss */
+  /* line 2532, style.scss */
   .section-four .block-steps {
     top: -50px;
   }
 
-  /* line 2536, style.scss */
+  /* line 2535, style.scss */
   .section-four {
     background: url(../img/bg/bg-section-four.jpg) -85px -315px no-repeat;
   }
 
-  /* line 2539, style.scss */
+  /* line 2538, style.scss */
   .section-four .block-steps .block-step:first-child {
     margin-top: 345px;
   }
 
-  /* line 2542, style.scss */
+  /* line 2541, style.scss */
   .section-four .block-steps .block-step:nth-child(2) {
     left: 0;
   }
 
-  /* line 2545, style.scss */
+  /* line 2544, style.scss */
   .section-four .btn-loud {
     font-size: 16px;
   }
 }
 @media (min-width: 1500px) and (max-height: 850px) {
-  /* line 2551, style.scss */
+  /* line 2550, style.scss */
   .section-two h2 {
     font-size: 36px;
   }
 
-  /* line 2554, style.scss */
+  /* line 2553, style.scss */
   .section-two .block-advantage h3 {
     font-size: 22px;
   }
 
-  /* line 2557, style.scss */
+  /* line 2556, style.scss */
   .section-two .block-advantage p {
     margin-top: 10px;
     font-size: 14px;
     line-height: 20px;
   }
 
-  /* line 2562, style.scss */
+  /* line 2561, style.scss */
   .section-two video {
     top: 150px;
   }
 
-  /* line 2565, style.scss */
+  /* line 2564, style.scss */
   .section-three .reg-text {
     margin-top: 5px;
     line-height: 22px;
   }
 
-  /* line 2569, style.scss */
+  /* line 2568, style.scss */
   .footer {
     margin: 0 80px 40px;
   }
 
-  /* line 2572, style.scss */
+  /* line 2571, style.scss */
   .statistics .main .container, .news .main .container {
     padding-top: 140px;
   }
 }
 @media screen and (max-height: 850px) {
-  /* line 2578, style.scss */
+  /* line 2577, style.scss */
   .aside .nav {
     top: 50%;
   }
-  /* line 2580, style.scss */
+  /* line 2579, style.scss */
   .aside .nav li {
     line-height: 34px;
   }
 
-  /* line 2584, style.scss */
+  /* line 2583, style.scss */
   .main .container h1 {
     font-size: 50px;
   }
 
-  /* line 2587, style.scss */
+  /* line 2586, style.scss */
   .about .main h2 {
     margin: 10px 0 10px;
     font-size: 30px;
   }
 
-  /* line 2591, style.scss */
+  /* line 2590, style.scss */
   .about .main .descr, .about .main .about-list .descr {
     line-height: 26px;
     font-size: 14px;
   }
 
-  /* line 2595, style.scss */
+  /* line 2594, style.scss */
   .about .main .separate {
     margin-top: 20px;
   }
 
-  /* line 2598, style.scss */
+  /* line 2597, style.scss */
   .about .main .about-list .about-item {
     padding: 25px 20px 0;
   }
 
-  /* line 2601, style.scss */
+  /* line 2600, style.scss */
   .main .container {
     padding-bottom: 100px;
   }
 
-  /* line 2605, style.scss */
+  /* line 2604, style.scss */
   .investments .section-invest h2 {
     font-size: 30px;
   }
 
-  /* line 2608, style.scss */
+  /* line 2607, style.scss */
   .investments .section-four .block-steps .block-step h3 {
     font-size: 22px;
   }
 
-  /* line 2611, style.scss */
+  /* line 2610, style.scss */
   .investments .section-four .block-steps .block-step p {
     font-size: 14px;
     line-height: 20px;
   }
 
-  /* line 2615, style.scss */
+  /* line 2614, style.scss */
   .investments {
     background: url(../img/bg/bg-section-four.jpg) -120px -270px no-repeat black;
   }
 
-  /* line 2618, style.scss */
+  /* line 2617, style.scss */
   .statistics .main h2 {
     font-size: 30px;
     margin: 0;
   }
 
-  /* line 2622, style.scss */
+  /* line 2621, style.scss */
   .statistics .main .btn-loud {
     font-size: 18px;
     margin-top: 20px;
   }
 
-  /* line 2626, style.scss */
+  /* line 2625, style.scss */
   .contacts .main h2 {
     font-size: 30px;
   }
 
-  /* line 2630, style.scss */
+  /* line 2629, style.scss */
   .contacts .main input, .contacts .main textarea {
     padding: 7px 15px;
     font-size: 16px;
   }
 
-  /* line 2635, style.scss */
+  /* line 2634, style.scss */
   .contacts .main .left-side .btn-loud {
     font-size: 18px;
     margin-bottom: 40px;
   }
 }
 @media screen and (max-height: 700px) {
-  /* line 2647, style.scss */
+  /* line 2646, style.scss */
   .section-one img {
     top: 80%;
   }
 }
 @media screen and (max-height: 360px) {
-  /* line 2653, style.scss */
+  /* line 2652, style.scss */
   .section-one span {
     font-size: 50px;
   }
