@@ -2013,6 +2013,12 @@ a {
 	.main .container h1 {
 		font-size: 65px
 	}
+	.faq .main .support-text p {
+		font-size: 14px;
+		br {
+			display: none;
+		}
+	}
 	.section-two .block-advantage {
 		margin: 0!important;
 		float: inherit!important;
