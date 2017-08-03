@@ -1813,6 +1813,73 @@ a {
 	}
 }
 
+@media screen and (max-height: 850px) {
+	.aside .nav {
+		top: 50%;
+		li {
+			line-height: 34px;
+		}
+	}
+	.main .container h1 {
+		font-size: 50px
+	}
+	.about .main h2 {
+		margin: 10px 0 10px;
+		font-size: 30px;
+	}
+	.about .main .descr, .about .main .about-list .descr {
+		line-height: 26px;
+		font-size: 14px;
+	}
+	.about .main .separate {
+		margin-top: 20px;
+	}
+	.about .main .about-list .about-item {
+		padding: 25px 20px 0;
+	}
+	.main .container {
+
+		padding-bottom: 100px;
+	}
+	.investments .section-invest h2 {
+		font-size: 30px;
+	}
+	.investments .section-four .block-steps .block-step h3 {
+		font-size: 22px;
+	}
+	.investments .section-four .block-steps .block-step p {
+		font-size: 14px;
+		line-height: 20px;
+	}
+	.investments {
+		background: url(../img/bg/bg-section-four.jpg) -120px -270px no-repeat black;
+	}
+	.statistics .main h2 {
+		font-size: 30px;
+		margin: 0;
+	}
+	.statistics .main .btn-loud {
+		font-size: 18px;
+		margin-top: 20px;
+	}
+	.contacts .main h2 {
+		font-size: 30px;
+	}
+	.contacts .main {
+		input, textarea {
+			padding: 7px 15px;
+			font-size: 16px;
+		}
+	}
+	.contacts .main .left-side .btn-loud {
+		font-size: 18px;
+		margin-bottom: 40px;
+	}
+	.header {
+
+	}
+}
+
 @media screen and (max-width: 1300px){
 	.section-three .reg-text {
 		line-height: 30px;
@@ -2573,75 +2640,6 @@ a {
 	 	padding-top: 140px;
 	 }
 }
-
-@media screen and (max-height: 850px) {
-	.aside .nav {
-		top: 50%;
-		li {
-			line-height: 34px;
-		}
-	}
-	.main .container h1 {
-		font-size: 50px
-	}
-	.about .main h2 {
-		margin: 10px 0 10px;
-		font-size: 30px;
-	}
-	.about .main .descr, .about .main .about-list .descr {
-		line-height: 26px;
-		font-size: 14px;
-	}
-	.about .main .separate {
-		margin-top: 20px;
-	}
-	.about .main .about-list .about-item {
-		padding: 25px 20px 0;
-	}
-	.main .container {
-
-		padding-bottom: 100px;
-	}
-	.investments .section-invest h2 {
-		font-size: 30px;
-	}
-	.investments .section-four .block-steps .block-step h3 {
-		font-size: 22px;
-	}
-	.investments .section-four .block-steps .block-step p {
-		font-size: 14px;
-		line-height: 20px;
-	}
-	.investments {
-		background: url(../img/bg/bg-section-four.jpg) -120px -270px no-repeat black;
-	}
-	.statistics .main h2 {
-		font-size: 30px;
-		margin: 0;
-	}
-	.statistics .main .btn-loud {
-		font-size: 18px;
-		margin-top: 20px;
-	}
-	.contacts .main h2 {
-		font-size: 30px;
-	}
-	.contacts .main {
-		input, textarea {
-			padding: 7px 15px;
-			font-size: 16px;
-		}
-	}
-	.contacts .main .left-side .btn-loud {
-		font-size: 18px;
-		margin-bottom: 40px;
-	}
-	.header {
-
-	}
-	
-}
-
 
 @media screen and (max-height: 700px) {
 	.section-one img {
