@@ -18,7 +18,7 @@
 </head>
 
 <body class='statistics'>
-
+<div id="preloader"></div>
 	<!-- ***Header*** -->
 	<header class='header'>
 		<!-- Авторизация -->
@@ -140,7 +140,7 @@
 		// be fetched from a server
 
 		var data = [],
-			totalPoints = 300;
+			totalPoints = 200;
 			if ( $(window).width() < 1000) {
 				var totalPoints = 100;
 			}
@@ -160,7 +160,7 @@
 				if (y < 0) {
 					y = 0;
 				} else if (y > 100) {
-					y = 100;
+					y = Math.random(0, 1)*100;
 				}
 
 				data.push(y);
@@ -178,7 +178,7 @@
 
 		// Set up the control widget
 
-		var updateInterval = 300;
+		var updateInterval = 500;
 		$("#updateInterval").val(updateInterval).change(function () {
 			var v = $(this).val();
 			if (v && !isNaN(+v)) {
@@ -196,25 +196,12 @@
 			series: {
 				shadowSize: 0,	// Drawing is faster without shadows
 				lines: {
-					lineWidth: 3
+					lineWidth: 5
 				}
 			},
-
-			yaxis: {
-				min: 0,
-				max: 100
-			},
 			grid: {
-
-				borderColor: 'none',
-				minBorderMargin: 20
-				// clickable: boolean
-				// hoverable: boolean
-				// autoHighlight: boolean
-				// mouseActiveRadius: number
-			},
-			xaxis: {
-				show: false
+				show: false,
+				margin: 10
 			},
 			colors: ['#d91e26']
 		});

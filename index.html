@@ -18,7 +18,8 @@
 </head>
 
 <body class='index'>
-
+	<!-- preloader -->
+	<div id="preloader"></div>
 	<!-- ***Header*** -->
 	<header class='header'>
 		<!-- Авторизация -->
@@ -85,19 +86,21 @@
 	<div id="fullpage">
 		<!-- section-1 -->
 		<section class="section section-one text-center">
-			<video autoplay loop data-keepplaying poster="img/bg/bg-sec1.png">
+			<video autoplay loop data-keepplaying>
 				<source data-src="video/iseiko_720.mp4" type="video/mp4" />
 				<source data-src="video/iseiko_720.webm" type="video/webm" />
 			</video>
 			<!-- <div class="container"> -->
 			<span>成功</span>
-			<img  class='infinite animated easeBounce' src="img/ico_scroll.png" alt="">
+			<div class="scroll-down">
+				<img  class='infinite animated easeBounce' src="img/ico_scroll.png" alt="">
+			</div>
 			<!-- </div> -->
 		</section>
 
 		<!-- section-2 -->
 		<section class="section section-two text-center">
-			<video autoplay loop data-keepplaying muted poster="img/bg/bg-sec2.png">
+			<video autoplay loop data-keepplaying poster="img/bg/bg-section-two.jpg">
 				<source data-src="video/main-layer2.mp4" type="video/mp4" />
 				<source data-src="video/main-layer2.webm" type="video/webm" />
 			</video>
