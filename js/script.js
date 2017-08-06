@@ -1,4 +1,8 @@
 $(document).ready(function() {
+	
+	$(window).load(function(){
+	$('#preloader').fadeOut('slow',function(){$(this).remove();});
+});
 
 	// Main screen scroll init
 	$('#fullpage').fullpage({
@@ -6,13 +10,13 @@ $(document).ready(function() {
 		navigation: true,
 		navigationPosition: 'right', 
 		// scrollOverflow: true,
-		responsiveWidth: 1500,
+		responsiveWidth: 1439,
 		verticalCentered: false
 	});
 
 
 	// for ANim
-	if ( $(window).width() < 1500 ) {
+	if ( $(window).width() < 1439 ) {
 		$('.index h2, .index .video-link, .index .btn-loud').addClass('hidden')
 	}
 
